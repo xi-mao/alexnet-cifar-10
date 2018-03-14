@@ -16,7 +16,7 @@ _NUM_CHANNELS = 3
 _BATCH_SIZE = 128
 _CLASS_SIZE = 10
 _ITERATION = 30000
-_SAVE_PATH = "tensorboard/cifar-10/"
+_SAVE_PATH = "tensorboard/cifar-10/"  #先创建好这些文件
 _SAVE_BOARD_PATH="tensorboard/board/"
 
 loss=tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=output,labels=y))
